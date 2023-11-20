@@ -24,23 +24,23 @@ Numbered list:
 The rain---not the reign---in
 Spain.
 
-*[Enes Seval](http://github.com/enesseval)*`;
+*[Mehmet Duran Kaya](http://github.com/mehmetdurankaya)*`;
 
 export const MarkdownSlice = createSlice({
-	name: "markdown",
-	initialState: {
-		clickHelp: false,
-		helpText: helpText,
-		userText: "this is user input",
-	},
-	reducers: {
-		clickHelpChange: (state) => {
-			state.clickHelp = !state.clickHelp;
-		},
-		changeUserText: (state, actions) => {
-			state.userText = actions.payload;
-		},
-	},
+  name: "markdown",
+  initialState: {
+    clickHelp: false,
+    helpText: helpText,
+    userText: "this is user input",
+  },
+  reducers: {
+    clickHelpChange: (state) => {
+      state.clickHelp = !state.clickHelp;
+    },
+    changeUserText: (state, actions) => {
+      state.userText = actions.payload;
+    },
+  },
 });
 
 export const { clickHelpChange, changeUserText } = MarkdownSlice.actions;
